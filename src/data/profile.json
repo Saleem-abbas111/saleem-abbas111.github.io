@@ -3,18 +3,26 @@
   "title": "Data Analyst",
   "tagline": "Welcome to my portfolio",
   "summary": "I use data analytics and machine learning to uncover patterns, identify trends, and generate insights that support better business decisions.",
+  "photoUrl": "/assets/uploads/profile-qd9s_9On.jpeg",
+  "projectsCount": "15+",
   "aboutText1": "I am a passionate data analytics student with a strong interest in business intelligence, machine learning, and data-driven decision-making. I enjoy exploring complex datasets to uncover meaningful patterns and insights that support better business decisions.",
   "aboutText2": "From identifying trends and performance bottlenecks to building interactive dashboards, I strive to transform raw data into clear, actionable insights that help organizations make informed strategic decisions and drive measurable value.",
-  "coreTools": ["Python", "SQL", "Excel", "Power BI", "Tableau"],
-  "projectsCount": "15+",
+  "coreTools": [
+    "Python",
+    "SQL",
+    "Excel",
+    "Power BI",
+    "Tableau",
+    "Figma",
+    "Canva"
+  ],
   "contactHeading": "Let's Build Something Great Together",
   "contactSubtitle": "Looking for someone to turn data into actionable insights? Let's connect.",
   "footerTagline": "Data Analyst & Business Analyst leveraging data to build insights, drive strategy, and optimize performance.",
   "builtWith": "Built with React & Tailwind CSS",
-  "photoUrl": "/assets/uploads/profile-qd9s_9On.jpeg",
   "githubUrl": "https://github.com/Saleem-abbas111",
   "linkedinUrl": "https://www.linkedin.com/in/saleem-abbas-b98985226",
   "email": "s.abbas.25893@khi.iba.edu.pk",
   "whatsappUrl": "https://wa.me/923482856289",
-  "resumeUrl": "/assets/uploads/Saleem_Abbas_Resume-C5JieUsZ.pdf"
+  "resumeUrl": "/assets/uploads/Saleem_Abbas_Resume_EE-2.pdf"
 }
