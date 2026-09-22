@@ -1,10 +1,40 @@
 {
   "items": [
-    { "name": "Google Data Analytics Professional Certificate", "issuer": "Coursera", "issuedDate": "Issued Nov 2025", "certificateUrl": "" },
-    { "name": "Data Analyst Certification", "issuer": "DataCamp", "issuedDate": "Issued May 2026", "certificateUrl": "" },
-    { "name": "Google Analytics Certification", "issuer": "Google", "issuedDate": "Issued Sep 2025", "certificateUrl": "" },
-    { "name": "Intermediate Python", "issuer": "DataCamp", "issuedDate": "Issued Jan 2026", "certificateUrl": "" },
-    { "name": "Introduction to SQL", "issuer": "DataCamp", "issuedDate": "Issued Mar 2025", "certificateUrl": "" },
-    { "name": "Applying SQL to Real-World Problems", "issuer": "DataCamp", "issuedDate": "Issued Apr 2025", "certificateUrl": "" }
+    {
+      "name": "Google Data Analytics Professional Certificate",
+      "issuer": "Coursera",
+      "issuedDate": "Issued Nov 2025",
+      "certificateUrl": ""
+    },
+    {
+      "name": "Data Analyst Certification",
+      "issuer": "DataCamp",
+      "issuedDate": "Issued May 2026",
+      "certificateUrl": ""
+    },
+    {
+      "name": "Google Analytics Certification",
+      "issuer": "Google",
+      "issuedDate": "Issued Sep 2025",
+      "certificateUrl": ""
+    },
+    {
+      "name": "Intermediate Python",
+      "issuer": "DataCamp",
+      "issuedDate": "Issued Jan 2026",
+      "certificateUrl": ""
+    },
+    {
+      "name": "Introduction to SQL",
+      "issuer": "DataCamp",
+      "issuedDate": "Issued Mar 2025",
+      "certificateUrl": ""
+    },
+    {
+      "name": "Applying SQL to Real-World Problems",
+      "issuer": "DataCamp",
+      "issuedDate": "Issued Apr 2025",
+      "certificateUrl": "https://saleem-abbas111.github.io/assets/uploads/sql-real-world-datacamp-C0dMjuId.pdf"
+    }
   ]
 }
