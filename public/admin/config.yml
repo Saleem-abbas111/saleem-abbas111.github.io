@@ -1,0 +1,115 @@
+backend:
+  name: github
+  # TODO: replace with your actual "username/repo" — e.g. saleem-abbas111/saleem-abbas111.github.io
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+  branch: main
+  # TODO: replace with your deployed OAuth worker URL — see README "Set up admin login"
+  base_url: https://YOUR-OAUTH-WORKER.example.workers.dev
+  auth_endpoint: auth
+
+# Images uploaded from the CMS are committed straight into the repo here,
+# and the site references them at /assets/uploads/<file>.
+media_folder: "public/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: profile
+    label: "Profile / Hero"
+    files:
+      - file: src/data/profile.json
+        name: profile
+        label: "Profile"
+        fields:
+          - { label: "Name", name: name, widget: string }
+          - { label: "Title", name: title, widget: string }
+          - { label: "Tagline (small text above name)", name: tagline, widget: string }
+          - { label: "Summary", name: summary, widget: text }
+          - { label: "Built-with note (bottom of hero)", name: builtWith, widget: string, required: false }
+          - { label: "GitHub URL", name: githubUrl, widget: string, required: false }
+          - { label: "Resume URL", name: resumeUrl, widget: string, required: false }
+
+  - name: projects
+    label: "Featured Projects"
+    files:
+      - file: src/data/projects.json
+        name: projects
+        label: "Featured Projects"
+        fields:
+          - name: items
+            label: "Projects"
+            widget: list
+            summary: "{{title}}"
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Description", name: description, widget: text }
+              - label: "Tags"
+                name: tags
+                widget: list
+                required: false
+                field: { label: "Tag", name: tag, widget: string }
+              - { label: "Image", name: image, widget: image, required: false }
+              - { label: "GitHub URL", name: githubUrl, widget: string, required: false }
+              - { label: "Certificate URL", name: certificateUrl, widget: string, required: false }
+
+  - name: dashboards
+    label: "Dashboard Gallery"
+    files:
+      - file: src/data/dashboards.json
+        name: dashboards
+        label: "Dashboard Gallery"
+        fields:
+          - name: items
+            label: "Dashboards"
+            widget: list
+            summary: "{{title}}"
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Description", name: description, widget: text }
+              - { label: "Image", name: image, widget: image, required: false }
+              - { label: "Live Dashboard URL", name: liveUrl, widget: string, required: false }
+              - { label: "GitHub URL", name: githubUrl, widget: string, required: false }
+
+  - name: skills
+    label: "Skills"
+    files:
+      - file: src/data/skills.json
+        name: skills
+        label: "Skills"
+        fields:
+          - name: items
+            label: "Skills"
+            widget: list
+            field: { label: "Skill", name: skill, widget: string }
+
+  - name: certifications
+    label: "Certifications"
+    files:
+      - file: src/data/certifications.json
+        name: certifications
+        label: "Certifications"
+        fields:
+          - name: items
+            label: "Certifications"
+            widget: list
+            summary: "{{name}}"
+            fields:
+              - { label: "Name", name: name, widget: string }
+              - { label: "Issuer", name: issuer, widget: string, required: false }
+              - { label: "Certificate URL", name: certificateUrl, widget: string, required: false }
+
+  - name: experience
+    label: "Experience"
+    files:
+      - file: src/data/experience.json
+        name: experience
+        label: "Experience"
+        fields:
+          - name: items
+            label: "Experience"
+            widget: list
+            summary: "{{role}}"
+            fields:
+              - { label: "Role", name: role, widget: string }
+              - { label: "Organization", name: organization, widget: string, required: false }
+              - { label: "Period", name: period, widget: string, required: false }
+              - { label: "Description", name: description, widget: text, required: false }

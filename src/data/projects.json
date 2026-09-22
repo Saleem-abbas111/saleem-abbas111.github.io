@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "title": "Employee Attrition Prediction",
+      "description": "Logistic regression and decision tree models predicting employee attrition, evaluated with ROC/PR curves (test AUC 0.845) and variable importance analysis.",
+      "tags": ["Logistic Regression", "Decision Tree", "Statistical Modeling"],
+      "image": "/assets/projects/employee-attrition-prediction.png",
+      "githubUrl": "",
+      "certificateUrl": ""
+    },
+    {
+      "title": "Ecommerce Sales Analysis",
+      "description": "End-to-end SQL data cleaning and KPI dashboarding for an ecommerce dataset — sales trends, top categories, complaints, and regional metrics.",
+      "tags": ["SQL", "Data Cleaning", "Dashboard Design"],
+      "image": "/assets/projects/ecommerce-sales-analysis.png",
+      "githubUrl": "",
+      "certificateUrl": ""
+    },
+    {
+      "title": "Vendor Performance Analysis",
+      "description": "Statistical analysis of vendor and pricing data to identify high-margin brands, validate bulk-purchase savings, and apply the 80-20 rule.",
+      "tags": ["Exploratory Data Analysis", "Statistical Analysis"],
+      "image": "/assets/projects/vendor-performance-analysis.png",
+      "githubUrl": "",
+      "certificateUrl": ""
+    },
+    {
+      "title": "Car Sales Analysis",
+      "description": "Exploratory analysis of car sales data to surface pricing and demand trends.",
+      "tags": ["Data Visualization", "Exploratory Data Analysis"],
+      "image": "",
+      "githubUrl": "",
+      "certificateUrl": ""
+    },
+    {
+      "title": "Monthly Expense Tracker",
+      "description": "Interactive personal finance dashboard tracking income, expenses, and savings across months.",
+      "tags": ["Data Visualization", "Dashboard Design"],
+      "image": "/assets/projects/monthly-income-expense-tracker.png",
+      "githubUrl": "",
+      "certificateUrl": ""
+    }
+  ]
+}

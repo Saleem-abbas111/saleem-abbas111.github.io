@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "name": "Google Data Analytics Professional Certificate", "issuer": "Google", "certificateUrl": "" },
+    { "name": "Google Analytics Certification", "issuer": "Google", "certificateUrl": "" },
+    { "name": "Data Analyst Certification", "issuer": "", "certificateUrl": "" },
+    { "name": "Introduction to SQL", "issuer": "", "certificateUrl": "" },
+    { "name": "Introduction to Statistics", "issuer": "", "certificateUrl": "" },
+    { "name": "Intermediate Python", "issuer": "", "certificateUrl": "" }
+  ]
+}
