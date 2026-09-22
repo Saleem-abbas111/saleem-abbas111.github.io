@@ -1,5 +1,13 @@
 {
-  "technical": ["Python", "SQL", "Excel", "Power BI", "Tableau"],
+  "technical": [
+    "Python",
+    "SQL",
+    "Excel",
+    "Power BI",
+    "Tableau",
+    "Figma",
+    "Canva"
+  ],
   "analytics": [
     "Data Cleaning",
     "Exploratory Data Analysis",
@@ -8,5 +16,9 @@
     "Database Management",
     "A/B Testing"
   ],
-  "soft": ["Problem Solving", "Effective Communication", "Analytical Thinking"]
+  "soft": [
+    "Problem Solving",
+    "Effective Communication",
+    "Analytical Thinking"
+  ]
 }
