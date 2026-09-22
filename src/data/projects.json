@@ -2,41 +2,33 @@
   "items": [
     {
       "title": "Employee Attrition Prediction",
-      "description": "Logistic regression and decision tree models predicting employee attrition, evaluated with ROC/PR curves (test AUC 0.845) and variable importance analysis.",
-      "tags": ["Logistic Regression", "Decision Tree", "Statistical Modeling"],
+      "description": "Predicted employee turnover with 85% ROC-AUC using logistic regression and decision trees in R, cross-validated across multiple data folds. Identified promotion timing, overtime, and compensation as the leading attrition drivers, translating results into an actionable HR retention strategy.",
+      "tags": ["R", "Logistic Regression", "Decision Trees", "Statistical Modeling", "Excel (EDA)"],
       "image": "/assets/projects/employee-attrition-prediction.png",
       "githubUrl": "",
       "certificateUrl": ""
     },
     {
-      "title": "Ecommerce Sales Analysis",
-      "description": "End-to-end SQL data cleaning and KPI dashboarding for an ecommerce dataset — sales trends, top categories, complaints, and regional metrics.",
-      "tags": ["SQL", "Data Cleaning", "Dashboard Design"],
-      "image": "/assets/projects/ecommerce-sales-analysis.png",
-      "githubUrl": "",
-      "certificateUrl": ""
-    },
-    {
       "title": "Vendor Performance Analysis",
-      "description": "Statistical analysis of vendor and pricing data to identify high-margin brands, validate bulk-purchase savings, and apply the 80-20 rule.",
-      "tags": ["Exploratory Data Analysis", "Statistical Analysis"],
+      "description": "Analyzed over 15 million purchase and sales records using SQL and Python to build a comprehensive vendor performance scorecard. Uncovered a 72% unit cost reduction from bulk purchasing and statistically validated vendor profit margin gaps through hypothesis testing.",
+      "tags": ["Python", "Pandas", "SQL (SQLite)", "Seaborn", "SciPy"],
       "image": "/assets/projects/vendor-performance-analysis.png",
       "githubUrl": "",
       "certificateUrl": ""
     },
     {
-      "title": "Car Sales Analysis",
-      "description": "Exploratory analysis of car sales data to surface pricing and demand trends.",
-      "tags": ["Data Visualization", "Exploratory Data Analysis"],
-      "image": "",
+      "title": "Monthly Expense Tracker",
+      "description": "Automated personal finance tracking in Excel using dynamic formulas, lookups, conditional formatting, and sparkline visualizations. Replaced manual spreadsheet upkeep with a self-updating dashboard that instantly surfaces savings rate, category spending, and monthly financial trends.",
+      "tags": ["Excel", "Data Validation", "Lookup", "Sparklines", "Dashboard Design"],
+      "image": "/assets/projects/monthly-income-expense-tracker.png",
       "githubUrl": "",
       "certificateUrl": ""
     },
     {
-      "title": "Monthly Expense Tracker",
-      "description": "Interactive personal finance dashboard tracking income, expenses, and savings across months.",
-      "tags": ["Data Visualization", "Dashboard Design"],
-      "image": "/assets/projects/monthly-income-expense-tracker.png",
+      "title": "Ecommerce Sales Dashboard",
+      "description": "Built a full SQL Server to Power BI pipeline cleaning and modeling over 100K orders, uncovering $26.9M in tracked sales, a 0.53% cancellation rate, and a 78% positive customer review rate.",
+      "tags": ["SQL Server", "Excel", "Power BI", "DAX"],
+      "image": "/assets/projects/ecommerce-sales-analysis.png",
       "githubUrl": "",
       "certificateUrl": ""
     }

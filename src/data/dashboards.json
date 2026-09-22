@@ -1,23 +1,23 @@
 {
   "items": [
     {
+      "title": "Car Sales Analysis",
+      "description": "Visualizes automotive market share, sales trends, and specific vehicle pricing and specifications.",
+      "image": "/assets/uploads/car-sales-analysis-C3LtLOJP.png",
+      "liveUrl": "",
+      "githubUrl": ""
+    },
+    {
+      "title": "HR Analytics",
+      "description": "Tracks employee attrition rates, workforce demographics, and job satisfaction to analyze retention.",
+      "image": "/assets/uploads/hr-analytics-CyRjxA9X.png",
+      "liveUrl": "",
+      "githubUrl": ""
+    },
+    {
       "title": "Ecommerce Sales Dashboard",
-      "description": "SQL-driven KPI dashboard covering sales trends, top categories, payment types, review sentiment, and regional performance metrics.",
-      "image": "/assets/projects/ecommerce-sales-analysis.png",
-      "liveUrl": "",
-      "githubUrl": ""
-    },
-    {
-      "title": "Vendor Performance Analysis",
-      "description": "Vendor purchase contribution, bulk-purchase pricing impact, and the 80-20 rule across top vendors and products, with a 72% unit-cost reduction validated through bulk purchasing optimization.",
-      "image": "/assets/projects/vendor-performance-analysis.png",
-      "liveUrl": "",
-      "githubUrl": ""
-    },
-    {
-      "title": "Monthly Income/Expense Tracker",
-      "description": "Interactive Excel dashboard tracking income sources, expense categories, and net savings by month with breakdown charts.",
-      "image": "/assets/projects/monthly-income-expense-tracker.png",
+      "description": "Tracks e-commerce performance, highlighting revenue trends, order volumes, payments, and customer feedback.",
+      "image": "/assets/uploads/ecommerce-sales-dashboard-BfHhe5uY.png",
       "liveUrl": "",
       "githubUrl": ""
     }

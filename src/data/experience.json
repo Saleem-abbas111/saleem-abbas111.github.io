@@ -1,7 +1,47 @@
 {
   "items": [
-    { "role": "Data & Development Intern", "organization": "", "period": "", "description": "" },
-    { "role": "Volunteer Educator", "organization": "F.G Girls School, Skardu", "period": "", "description": "" },
-    { "role": "Volunteer Educator", "organization": "The Ayat Foundation", "period": "", "description": "" }
+    {
+      "type": "education",
+      "title": "Bachelor of Business Administration (BBA)",
+      "organization": "Institute of Business Administration (IBA), Karachi",
+      "period": "Aug 2022 – Jun 2026",
+      "courses": "Introduction to Statistics, Inferential Statistics, Data Manipulation & Visualization, Analytical Approach to Marketing Decisions, Essential Software (Python)",
+      "bullets": []
+    },
+    {
+      "type": "work",
+      "title": "Sales Executive",
+      "organization": "Humantek",
+      "period": "Jul 2025 – Aug 2025",
+      "courses": "",
+      "bullets": [
+        "Built an automated CRM dashboard using Google Sheets to monitor real-time sales KPIs across 5+ performance metrics, cutting manual reporting time by 30%.",
+        "Applied analytics and data visualization to refine outreaching, upselling, and cross-selling strategies, increasing lead conversion rates by 10%.",
+        "Presented and pitched tailored service offerings to prospective clients, effectively communicating value propositions across platforms such as Discord, Twitch, and Kick."
+      ]
+    },
+    {
+      "type": "work",
+      "title": "Data & Development Intern",
+      "organization": "The Ayat Foundation",
+      "period": "Jun 2025 – Aug 2025",
+      "courses": "",
+      "bullets": [
+        "Collected, cleaned, and structured a dataset of 70+ scholarship opportunities for an application development, enabling data-driven guidance for Gilgit Baltistan students.",
+        "Assisted a research team in collecting and analyzing data on educational accessibility across GB districts and presented actionable insights.",
+        "Tracked donation records during a fundraising campaign for flood-relief operations."
+      ]
+    },
+    {
+      "type": "work",
+      "title": "Volunteer Educator",
+      "organization": "F.G Girls School, Skardu",
+      "period": "Jun 2023 – Aug 2023",
+      "courses": "",
+      "bullets": [
+        "Taught 300+ students and tracked monthly learning-outcome KPIs, achieving a 25% improvement in assessment scores over 3 months.",
+        "Organized a 3-day teacher training workshop on instructional techniques and tools for 7+ educators."
+      ]
+    }
   ]
 }

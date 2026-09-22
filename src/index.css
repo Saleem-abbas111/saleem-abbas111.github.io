@@ -1,9 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, #e9ebef 1px, transparent 1px),
+    linear-gradient(to bottom, #e9ebef 1px, transparent 1px);
+  background-size: 32px 32px;
 }
 
 @media (prefers-reduced-motion: reduce) {

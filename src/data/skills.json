@@ -1,12 +1,12 @@
 {
-  "items": [
-    "Analytical Thinking",
-    "Data Manipulation & Visualization",
-    "Statistical Analysis",
-    "Statistical Modeling",
-    "Inferential Statistics",
-    "Database Management",
+  "technical": ["Python", "SQL", "Excel", "Power BI", "Tableau"],
+  "analytics": [
+    "Data Cleaning",
     "Exploratory Data Analysis",
-    "Effective Communication"
-  ]
+    "Statistical Analysis",
+    "Data Visualization",
+    "Database Management",
+    "A/B Testing"
+  ],
+  "soft": ["Problem Solving", "Effective Communication", "Analytical Thinking"]
 }

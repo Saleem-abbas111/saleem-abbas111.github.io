@@ -5,34 +5,28 @@ import skillsData from "./data/skills.json";
 import certificationsData from "./data/certifications.json";
 import experienceData from "./data/experience.json";
 
-const projects = projectsData.items;
-const dashboards = dashboardsData.items;
-const skills = skillsData.items;
-const certifications = certificationsData.items;
-const experience = experienceData.items;
-
 import Nav from "./components/Nav.jsx";
 import Hero from "./components/Hero.jsx";
+import Experience from "./components/Experience.jsx";
+import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import DashboardGallery from "./components/DashboardGallery.jsx";
-import Skills from "./components/Skills.jsx";
 import Certifications from "./components/Certifications.jsx";
-import Experience from "./components/Experience.jsx";
 import Footer from "./components/Footer.jsx";
 
 export default function App() {
   return (
     <>
-      <Nav name={profile.name} />
+      <Nav profile={profile} />
       <main>
         <Hero profile={profile} />
-        <Projects projects={projects} />
-        <DashboardGallery dashboards={dashboards} githubUrl={profile.githubUrl} />
-        <Skills skills={skills} />
-        <Certifications certifications={certifications} />
-        <Experience experience={experience} />
+        <Experience profile={profile} experience={experienceData.items} />
+        <Skills skills={skillsData} />
+        <Projects projects={projectsData.items} githubUrl={profile.githubUrl} />
+        <DashboardGallery dashboards={dashboardsData.items} githubUrl={profile.githubUrl} />
+        <Certifications certifications={certificationsData.items} />
       </main>
-      <Footer name={profile.name} githubUrl={profile.githubUrl} />
+      <Footer profile={profile} />
     </>
   );
 }

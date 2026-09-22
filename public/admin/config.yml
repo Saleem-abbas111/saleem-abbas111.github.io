@@ -1,9 +1,7 @@
 backend:
   name: github
-  # TODO: replace with your actual "username/repo" — e.g. saleem-abbas111/saleem-abbas111.github.io
   repo: saleem-abbas111/saleem-abbas111.github.io
   branch: main
-  # TODO: replace with your deployed OAuth worker URL — see README "Set up admin login"
   base_url: https://portfolio-cms-auth.saleemjk71214.workers.dev
   auth_endpoint: auth
 
@@ -14,7 +12,7 @@ public_folder: "/assets/uploads"
 
 collections:
   - name: profile
-    label: "Profile / Hero"
+    label: "Profile / Hero / About / Contact"
     files:
       - file: src/data/profile.json
         name: profile
@@ -22,11 +20,73 @@ collections:
         fields:
           - { label: "Name", name: name, widget: string }
           - { label: "Title", name: title, widget: string }
-          - { label: "Tagline (small text above name)", name: tagline, widget: string }
-          - { label: "Summary", name: summary, widget: text }
-          - { label: "Built-with note (bottom of hero)", name: builtWith, widget: string, required: false }
+          - { label: "Tagline (small pill above name)", name: tagline, widget: string }
+          - { label: "Hero summary", name: summary, widget: text }
+          - { label: "Photo", name: photoUrl, widget: image, required: false }
+          - { label: "Projects count badge (e.g. 15+)", name: projectsCount, widget: string, required: false }
+          - { label: "About Me — paragraph 1", name: aboutText1, widget: text, required: false }
+          - { label: "About Me — paragraph 2", name: aboutText2, widget: text, required: false }
+          - label: "Core Tools"
+            name: coreTools
+            widget: list
+            required: false
+            field: { label: "Tool", name: tool, widget: string }
+          - { label: "Contact section heading", name: contactHeading, widget: string, required: false }
+          - { label: "Contact section subtitle", name: contactSubtitle, widget: string, required: false }
+          - { label: "Footer tagline", name: footerTagline, widget: text, required: false }
+          - { label: "Built-with note (footer)", name: builtWith, widget: string, required: false }
           - { label: "GitHub URL", name: githubUrl, widget: string, required: false }
-          - { label: "Resume URL", name: resumeUrl, widget: string, required: false }
+          - { label: "LinkedIn URL", name: linkedinUrl, widget: string, required: false }
+          - { label: "Email", name: email, widget: string, required: false }
+          - { label: "WhatsApp link (e.g. https://wa.me/923...)", name: whatsappUrl, widget: string, required: false }
+          - { label: "Resume file", name: resumeUrl, widget: file, required: false }
+
+  - name: experience
+    label: "My Journey (Education + Experience)"
+    files:
+      - file: src/data/experience.json
+        name: experience
+        label: "Journey"
+        fields:
+          - name: items
+            label: "Timeline items"
+            widget: list
+            summary: "{{title}}"
+            fields:
+              - label: "Type"
+                name: type
+                widget: select
+                options: ["education", "work"]
+                default: "work"
+              - { label: "Title (degree or role)", name: title, widget: string }
+              - { label: "Organization", name: organization, widget: string, required: false }
+              - { label: "Period (e.g. Jun 2023 – Aug 2023)", name: period, widget: string, required: false }
+              - { label: "Relevant courses (education only)", name: courses, widget: text, required: false }
+              - label: "Bullet points (work only)"
+                name: bullets
+                widget: list
+                required: false
+                field: { label: "Bullet", name: bullet, widget: string }
+
+  - name: skills
+    label: "Skills"
+    files:
+      - file: src/data/skills.json
+        name: skills
+        label: "Skills"
+        fields:
+          - label: "Technical Tools"
+            name: technical
+            widget: list
+            field: { label: "Tool", name: tool, widget: string }
+          - label: "Analytics Skills"
+            name: analytics
+            widget: list
+            field: { label: "Skill", name: skill, widget: string }
+          - label: "Soft Skills"
+            name: soft
+            widget: list
+            field: { label: "Skill", name: skill, widget: string }
 
   - name: projects
     label: "Featured Projects"
@@ -69,18 +129,6 @@ collections:
               - { label: "Live Dashboard URL", name: liveUrl, widget: string, required: false }
               - { label: "GitHub URL", name: githubUrl, widget: string, required: false }
 
-  - name: skills
-    label: "Skills"
-    files:
-      - file: src/data/skills.json
-        name: skills
-        label: "Skills"
-        fields:
-          - name: items
-            label: "Skills"
-            widget: list
-            field: { label: "Skill", name: skill, widget: string }
-
   - name: certifications
     label: "Certifications"
     files:
@@ -95,21 +143,5 @@ collections:
             fields:
               - { label: "Name", name: name, widget: string }
               - { label: "Issuer", name: issuer, widget: string, required: false }
+              - { label: "Issued date label (e.g. Issued Nov 2025)", name: issuedDate, widget: string, required: false }
               - { label: "Certificate URL", name: certificateUrl, widget: string, required: false }
-
-  - name: experience
-    label: "Experience"
-    files:
-      - file: src/data/experience.json
-        name: experience
-        label: "Experience"
-        fields:
-          - name: items
-            label: "Experience"
-            widget: list
-            summary: "{{role}}"
-            fields:
-              - { label: "Role", name: role, widget: string }
-              - { label: "Organization", name: organization, widget: string, required: false }
-              - { label: "Period", name: period, widget: string, required: false }
-              - { label: "Description", name: description, widget: text, required: false }
