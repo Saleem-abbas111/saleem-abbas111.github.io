@@ -1,6 +1,6 @@
 import { Github } from "lucide-react";
 
-export default function Projects({ projects, githubUrl }) {
+export default function Projects({ projects, folderUrl }) {
   return (
     <section id="projects" className="border-b border-line bg-mist">
       <div className="mx-auto max-w-6xl px-6 py-20">
@@ -42,10 +42,10 @@ export default function Projects({ projects, githubUrl }) {
           ))}
         </div>
 
-        {githubUrl && (
+        {folderUrl && (
           <p className="mt-10 text-center">
             <a
-              href={githubUrl}
+              href={folderUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium text-accent hover:underline"

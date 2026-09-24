@@ -3,23 +3,26 @@
     {
       "title": "Car Sales Analysis",
       "description": "Visualizes automotive market share, sales trends, and specific vehicle pricing and specifications.",
+      "tool": "Tableau",
       "image": "/assets/uploads/car-sales-analysis-C3LtLOJP.png",
-      "liveUrl": "",
-      "githubUrl": ""
+      "embedUrl": "https://public.tableau.com/views/Carsalescomplete2/Dashboard1?:embed=y&:showVizHome=no&:toolbar=yes&:tabs=no&:display_count=no",
+      "liveUrl": "https://github.com/Saleem-abbas111/saleem-abbas111.github.io/blob/main/dashboards/Car%20sales%20Dashboard.twbx"
     },
     {
       "title": "HR Analytics",
       "description": "Tracks employee attrition rates, workforce demographics, and job satisfaction to analyze retention.",
+      "tool": "Tableau",
       "image": "/assets/uploads/hr-analytics-CyRjxA9X.png",
-      "liveUrl": "",
-      "githubUrl": ""
+      "embedUrl": "https://public.tableau.com/views/HRAnalytics_17301176151650/Dashboard2?:embed=y&:showVizHome=no&:toolbar=yes&:tabs=no&:display_count=no",
+      "liveUrl": "https://github.com/Saleem-abbas111/saleem-abbas111.github.io/blob/main/dashboards/HR%20Analytics.twbx"
     },
     {
       "title": "Ecommerce Sales Dashboard",
       "description": "Tracks e-commerce performance, highlighting revenue trends, order volumes, payments, and customer feedback.",
+      "tool": "Power BI",
       "image": "/assets/uploads/ecommerce-sales-dashboard-BfHhe5uY.png",
-      "liveUrl": "",
-      "githubUrl": ""
+      "embedUrl": "https://app.powerbi.com/view?r=eyJrIjoiM2ExMzI2ZjMtZTM4MC00NjhlLTlmNjgtMTRmYjQ5ZmNlNzViIiwidCI6ImI4ZTY4ZTg5LWZiZGMtNDkxYS1iOGMyLWY1Nzk2ZTFhNDBiOSIsImMiOjl9&pageName=fe9cec94b0af0b5ce904",
+      "liveUrl": "https://github.com/Saleem-abbas111/saleem-abbas111.github.io/blob/main/projects/ecommerce-sales-analysis/Power%20BI%20Dashboard.pbix"
     }
   ]
 }

@@ -1,40 +1,10 @@
 {
   "items": [
-    {
-      "name": "Google Data Analytics Professional Certificate",
-      "issuer": "Coursera",
-      "issuedDate": "Issued Nov 2025",
-      "certificateUrl": ""
-    },
-    {
-      "name": "Data Analyst Certification",
-      "issuer": "DataCamp",
-      "issuedDate": "Issued May 2026",
-      "certificateUrl": ""
-    },
-    {
-      "name": "Google Analytics Certification",
-      "issuer": "Google",
-      "issuedDate": "Issued Sep 2025",
-      "certificateUrl": ""
-    },
-    {
-      "name": "Intermediate Python",
-      "issuer": "DataCamp",
-      "issuedDate": "Issued Jan 2026",
-      "certificateUrl": ""
-    },
-    {
-      "name": "Introduction to SQL",
-      "issuer": "DataCamp",
-      "issuedDate": "Issued Mar 2025",
-      "certificateUrl": ""
-    },
-    {
-      "name": "Applying SQL to Real-World Problems",
-      "issuer": "DataCamp",
-      "issuedDate": "Issued Apr 2025",
-      "certificateUrl": "https://saleem-abbas111.github.io/assets/uploads/sql-real-world-datacamp-C0dMjuId.pdf"
-    }
+    { "name": "Google Data Analytics Professional Certificate", "issuer": "Coursera", "issuedDate": "Issued Nov 2025", "certificateUrl": "/assets/uploads/google-data-analytics-coursera-DdxBRD5P.pdf" },
+    { "name": "Data Analyst Certification", "issuer": "DataCamp", "issuedDate": "Issued May 2026", "certificateUrl": "/assets/uploads/data-analyst-datacamp-C7_HGGsp.pdf" },
+    { "name": "Google Analytics Certification", "issuer": "Google", "issuedDate": "Issued Sep 2025", "certificateUrl": "/assets/uploads/google-analytics-certification-BWIg4sDE.pdf" },
+    { "name": "Intermediate Python", "issuer": "DataCamp", "issuedDate": "Issued Jan 2026", "certificateUrl": "/assets/uploads/intermediate-python-datacamp-BrDmRr_F.pdf" },
+    { "name": "Introduction to SQL", "issuer": "DataCamp", "issuedDate": "Issued Mar 2025", "certificateUrl": "/assets/uploads/intro-to-sql-datacamp-DL7L1n0y.pdf" },
+    { "name": "Applying SQL to Real-World Problems", "issuer": "DataCamp", "issuedDate": "Issued Apr 2025", "certificateUrl": "/assets/uploads/sql-real-world-datacamp-C0dMjuId.pdf" }
   ]
 }

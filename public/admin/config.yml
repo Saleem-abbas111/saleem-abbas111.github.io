@@ -40,6 +40,8 @@ collections:
           - { label: "Email", name: email, widget: string, required: false }
           - { label: "WhatsApp link (e.g. https://wa.me/923...)", name: whatsappUrl, widget: string, required: false }
           - { label: "Resume file", name: resumeUrl, widget: file, required: false }
+          - { label: "\"See all projects\" link (GitHub folder)", name: projectsFolderUrl, widget: string, required: false }
+          - { label: "\"See all dashboards\" link (GitHub folder)", name: dashboardsFolderUrl, widget: string, required: false }
 
   - name: experience
     label: "My Journey (Education + Experience)"
@@ -125,9 +127,10 @@ collections:
             fields:
               - { label: "Title", name: title, widget: string }
               - { label: "Description", name: description, widget: text }
+              - { label: "Tool (Tableau / Power BI)", name: tool, widget: string, required: false }
               - { label: "Image", name: image, widget: image, required: false }
-              - { label: "Live Dashboard URL", name: liveUrl, widget: string, required: false }
-              - { label: "GitHub URL", name: githubUrl, widget: string, required: false }
+              - { label: "Live embed URL (Tableau Public / Power BI publish-to-web link)", name: embedUrl, widget: string, required: false }
+              - { label: "Downloadable workbook link (.twbx / .pbix)", name: liveUrl, widget: string, required: false }
 
   - name: certifications
     label: "Certifications"
@@ -144,4 +147,4 @@ collections:
               - { label: "Name", name: name, widget: string }
               - { label: "Issuer", name: issuer, widget: string, required: false }
               - { label: "Issued date label (e.g. Issued Nov 2025)", name: issuedDate, widget: string, required: false }
-              - { label: "Certificate URL", name: certificateUrl, widget: string, required: false }
+              - { label: "Certificate PDF", name: certificateUrl, widget: file, required: false }

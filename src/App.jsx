@@ -22,8 +22,8 @@ export default function App() {
         <Hero profile={profile} />
         <Experience profile={profile} experience={experienceData.items} />
         <Skills skills={skillsData} />
-        <Projects projects={projectsData.items} githubUrl={profile.githubUrl} />
-        <DashboardGallery dashboards={dashboardsData.items} githubUrl={profile.githubUrl} />
+        <Projects projects={projectsData.items} folderUrl={profile.projectsFolderUrl} />
+        <DashboardGallery dashboards={dashboardsData.items} folderUrl={profile.dashboardsFolderUrl} />
         <Certifications certifications={certificationsData.items} />
       </main>
       <Footer profile={profile} />
