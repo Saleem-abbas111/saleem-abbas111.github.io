@@ -1,0 +1,43 @@
+{
+  "ads": [
+    {
+      "title": "Energy Drink — Performance Campaign",
+      "storyboard": "/assets/uploads/ai-creatives/energy-drink-grid.jpg",
+      "video": "/assets/uploads/ai-creatives/energy-drink-ad.mp4"
+    },
+    {
+      "title": "Feyerance — Perfume Campaign",
+      "storyboard": "/assets/uploads/ai-creatives/perfume-grid.jpg",
+      "video": "/assets/uploads/ai-creatives/perfume-final-ad.mp4"
+    },
+    {
+      "title": "Feyerance — Alternate Cut",
+      "storyboard": "",
+      "video": "/assets/uploads/ai-creatives/perfume-ad-alt.mp4"
+    },
+    {
+      "title": "Chain — Product Ad",
+      "storyboard": "",
+      "video": "/assets/uploads/ai-creatives/chain-ad.mp4"
+    },
+    {
+      "title": "Alpine Karakoram — Customized Trips",
+      "storyboard": "",
+      "video": "/assets/uploads/ai-creatives/trekking-trips-ad.mp4"
+    }
+  ],
+  "posts": [
+    {
+      "title": "Nangma Valley — The Yosemite of Pakistan",
+      "image": "/assets/uploads/ai-creatives/posts/nangma-valley.png"
+    },
+    {
+      "title": "The 8 Stages of Trekking",
+      "image": "/assets/uploads/ai-creatives/posts/8-stages-cover.jpeg"
+    },
+    {
+      "title": "The 8 Stages of Trekking — Stage 1",
+      "image": "/assets/uploads/ai-creatives/posts/the-decision.jpeg"
+    }
+  ]
+}

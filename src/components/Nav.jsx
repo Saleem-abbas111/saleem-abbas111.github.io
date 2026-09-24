@@ -6,6 +6,8 @@ export default function Nav({ profile }) {
     ["Skills", "#skills"],
     ["Projects", "#projects"],
     ["Dashboards", "#dashboards"],
+    ["Websites", "#websites"],
+    ["AI Creatives", "#ai-creatives"],
     ["Certifications", "#certifications"],
     ["Contact", "#contact"],
   ];
@@ -18,7 +20,7 @@ export default function Nav({ profile }) {
           <span className="text-accent">.</span>
         </a>
 
-        <nav className="hidden gap-8 text-sm text-subtle md:flex">
+        <nav className="hidden gap-6 text-sm text-subtle lg:flex">
           {links.map(([label, href]) => (
             <a key={href} href={href} className="transition-colors hover:text-ink">
               {label}

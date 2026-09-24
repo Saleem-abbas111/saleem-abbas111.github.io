@@ -132,6 +132,46 @@ collections:
               - { label: "Live embed URL (Tableau Public / Power BI publish-to-web link)", name: embedUrl, widget: string, required: false }
               - { label: "Downloadable workbook link (.twbx / .pbix)", name: liveUrl, widget: string, required: false }
 
+  - name: websites
+    label: "Websites"
+    files:
+      - file: src/data/websites.json
+        name: websites
+        label: "Websites"
+        fields:
+          - name: items
+            label: "Websites"
+            widget: list
+            summary: "{{title}}"
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Description", name: description, widget: text }
+              - { label: "Screenshot", name: image, widget: image, required: false }
+              - { label: "Live website URL", name: liveUrl, widget: string, required: false }
+
+  - name: aiCreatives
+    label: "AI Creatives"
+    files:
+      - file: src/data/aiCreatives.json
+        name: aiCreatives
+        label: "AI Creatives"
+        fields:
+          - name: ads
+            label: "Ads"
+            widget: list
+            summary: "{{title}}"
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Storyboard image (leave empty for video-only)", name: storyboard, widget: image, required: false }
+              - { label: "Video", name: video, widget: file }
+          - name: posts
+            label: "Posts"
+            widget: list
+            summary: "{{title}}"
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Image", name: image, widget: image }
+
   - name: certifications
     label: "Certifications"
     files:

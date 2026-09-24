@@ -11,9 +11,11 @@ export default function Footer({ profile }) {
   const quickLinks = [
     ["About", "#about"],
     ["Skills", "#skills"],
-    ["Certifications", "#certifications"],
     ["Projects", "#projects"],
     ["Dashboards", "#dashboards"],
+    ["Websites", "#websites"],
+    ["AI Creatives", "#ai-creatives"],
+    ["Certifications", "#certifications"],
     ["Contact", "#contact"],
   ];
 

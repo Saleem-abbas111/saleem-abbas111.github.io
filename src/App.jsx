@@ -4,6 +4,8 @@ import dashboardsData from "./data/dashboards.json";
 import skillsData from "./data/skills.json";
 import certificationsData from "./data/certifications.json";
 import experienceData from "./data/experience.json";
+import websitesData from "./data/websites.json";
+import aiCreativesData from "./data/aiCreatives.json";
 
 import Nav from "./components/Nav.jsx";
 import Hero from "./components/Hero.jsx";
@@ -11,6 +13,8 @@ import Experience from "./components/Experience.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import DashboardGallery from "./components/DashboardGallery.jsx";
+import Websites from "./components/Websites.jsx";
+import AICreatives from "./components/AICreatives.jsx";
 import Certifications from "./components/Certifications.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -24,6 +28,8 @@ export default function App() {
         <Skills skills={skillsData} />
         <Projects projects={projectsData.items} folderUrl={profile.projectsFolderUrl} />
         <DashboardGallery dashboards={dashboardsData.items} folderUrl={profile.dashboardsFolderUrl} />
+        <Websites websites={websitesData.items} />
+        <AICreatives ads={aiCreativesData.ads} posts={aiCreativesData.posts} />
         <Certifications certifications={certificationsData.items} />
       </main>
       <Footer profile={profile} />

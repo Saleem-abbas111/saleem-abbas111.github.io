@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "title": "Firstsight Adventure",
+      "description": "A travel and expedition booking platform for high-altitude journeys, treks, and guided tours — built with custom expedition, tour, and itinerary listings.",
+      "image": "/assets/uploads/websites/firstsight-adventure.png",
+      "liveUrl": "https://firstsight-adventure.saleemjk71214.workers.dev/"
+    },
+    {
+      "title": "Al-Riza Quran Academy",
+      "description": "An online Quran and Islamic Studies learning platform for kids, ladies, and men, with course listings, teacher profiles, and demo booking.",
+      "image": "/assets/uploads/websites/al-riza-quran-academy.png",
+      "liveUrl": "https://alrizaquranacademy.com/"
+    }
+  ]
+}
