@@ -1,3 +1,4 @@
+import { BrandIcon } from "./brands.jsx";
 import { GraduationCap, Briefcase, Code2, Database, Table2, BarChart3, LayoutDashboard } from "lucide-react";
 
 const TIMELINE_ICON = { education: GraduationCap, work: Briefcase };
@@ -31,7 +32,7 @@ export default function Experience({ profile, experience }) {
                     key={tool}
                     className="flex w-24 flex-col items-center gap-2 rounded-xl border border-line px-3 py-4"
                   >
-                    <Icon size={20} className="text-accent" />
+                    <BrandIcon name={tool} size={24} />
                     <span className="text-xs font-medium text-ink">{tool}</span>
                   </div>
                 );

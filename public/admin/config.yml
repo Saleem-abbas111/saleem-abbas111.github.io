@@ -148,6 +148,7 @@ collections:
               - { label: "Description", name: description, widget: text }
               - { label: "Screenshot", name: image, widget: image, required: false }
               - { label: "Live website URL", name: liveUrl, widget: string, required: false }
+              - { label: "Tools used (brand badges)", name: tools, widget: select, multiple: true, required: false, options: ["Canva","Figma","Google","Gemini","Cloudflare","React","Tailwind CSS","WordPress","HTML","Python","AI Video"] }
 
   - name: aiCreatives
     label: "AI Creatives"
@@ -164,6 +165,7 @@ collections:
               - { label: "Title", name: title, widget: string }
               - { label: "Storyboard image (leave empty for video-only)", name: storyboard, widget: image, required: false }
               - { label: "Video", name: video, widget: file }
+              - { label: "Tools used (brand badges)", name: tools, widget: select, multiple: true, required: false, options: ["Canva","Figma","Google","Gemini","Cloudflare","React","Tailwind CSS","WordPress","HTML","Python","AI Video"] }
           - name: posts
             label: "Posts"
             widget: list
@@ -171,6 +173,7 @@ collections:
             fields:
               - { label: "Title", name: title, widget: string }
               - { label: "Image", name: image, widget: image }
+              - { label: "Tools used (brand badges)", name: tools, widget: select, multiple: true, required: false, options: ["Canva","Figma","Google","Gemini","Cloudflare","React","Tailwind CSS","WordPress","HTML","Python","AI Video"] }
 
   - name: certifications
     label: "Certifications"

@@ -1,51 +1,54 @@
 import { useState } from "react";
-import { X, Film, Images } from "lucide-react";
+import { X } from "lucide-react";
+import { Badge } from "./brands.jsx";
+import { SectionHead } from "./ui.jsx";
+
+const Label = ({ children }) => (
+  <p className="mb-2 font-display text-xs font-medium uppercase tracking-wider text-[#5b6470]">{children}</p>
+);
 
 export default function AICreatives({ ads, posts }) {
   const [openPost, setOpenPost] = useState(null);
 
   return (
-    <section id="ai-creatives" className="border-b border-line">
+    <section id="ai-creatives" className="border-b border-edge bg-sect2">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="font-display text-center text-3xl font-bold text-ink md:text-4xl">AI Creatives</h2>
-        <div className="mx-auto mt-4 h-1 w-16 rounded bg-accent" />
-        <p className="mx-auto mt-6 max-w-2xl text-center text-subtle">
-          AI-generated ad campaigns and social posts, from concept storyboard to finished video.
-        </p>
+        <SectionHead
+          eyebrow="Generative design"
+          title="AI Creatives"
+          blurb="AI-generated ad campaigns and social posts, from concept storyboard to finished video."
+        />
 
         {ads?.length > 0 && (
           <div className="mt-14">
-            <div className="mb-6 flex items-center gap-2">
-              <Film size={18} className="text-accent" />
-              <h3 className="font-display text-lg font-semibold text-ink">Ads</h3>
-            </div>
-            <div className="space-y-6">
+            <h3 className="font-display text-lg font-medium text-[#22272b]">Ad campaigns</h3>
+            <div className="mt-6 space-y-6">
               {ads.map((ad) => (
-                <div key={ad.title} className="overflow-hidden rounded-2xl border border-line bg-mist p-4">
-                  <p className="mb-3 px-1 text-sm font-medium text-ink">{ad.title}</p>
+                <article key={ad.title} className="rounded-2xl border border-edge bg-card p-5 shadow-sm">
+                  <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+                    <h4 className="font-display text-base font-medium text-[#22272b]">{ad.title}</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {ad.tools?.map((t) => <Badge key={t} name={t} />)}
+                    </div>
+                  </div>
                   {ad.storyboard ? (
-                    <div className="grid gap-4 md:grid-cols-2">
-                      <img
-                        src={ad.storyboard}
-                        alt={`${ad.title} storyboard`}
-                        className="w-full rounded-xl border border-line object-cover"
-                      />
-                      <video
-                        src={ad.video}
-                        controls
-                        preload="metadata"
-                        className="aspect-video w-full rounded-xl border border-line bg-black"
-                      />
+                    <div className="grid gap-5 md:grid-cols-2">
+                      <div>
+                        <Label>Storyboard</Label>
+                        <img src={ad.storyboard} alt={`${ad.title} storyboard`} className="aspect-video w-full rounded-xl border border-edge object-cover" />
+                      </div>
+                      <div>
+                        <Label>Final ad</Label>
+                        <video src={ad.video} controls preload="metadata" className="aspect-video w-full rounded-xl border border-edge bg-black" />
+                      </div>
                     </div>
                   ) : (
-                    <video
-                      src={ad.video}
-                      controls
-                      preload="metadata"
-                      className="aspect-video w-full max-w-2xl rounded-xl border border-line bg-black md:mx-auto md:block"
-                    />
+                    <div className="mx-auto max-w-2xl">
+                      <Label>Final ad</Label>
+                      <video src={ad.video} controls preload="metadata" className="aspect-video w-full rounded-xl border border-edge bg-black" />
+                    </div>
                   )}
-                </div>
+                </article>
               ))}
             </div>
           </div>
@@ -53,22 +56,23 @@ export default function AICreatives({ ads, posts }) {
 
         {posts?.length > 0 && (
           <div className="mt-16">
-            <div className="mb-6 flex items-center gap-2">
-              <Images size={18} className="text-accent" />
-              <h3 className="font-display text-lg font-semibold text-ink">Posts</h3>
-            </div>
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+            <h3 className="font-display text-lg font-medium text-[#22272b]">Social posts</h3>
+            <div className="mt-6 grid grid-cols-2 gap-5 sm:grid-cols-3">
               {posts.map((p, i) => (
                 <button
                   key={p.title}
                   onClick={() => setOpenPost(i)}
-                  className="group overflow-hidden rounded-xl border border-line"
+                  className="group flex flex-col overflow-hidden rounded-2xl border border-edge bg-card text-left shadow-sm"
                 >
-                  <img
-                    src={p.image}
-                    alt={p.title}
-                    className="aspect-[4/5] w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+                  <div className="aspect-[4/5] w-full overflow-hidden">
+                    <img src={p.image} alt={p.title} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                  </div>
+                  <div className="flex flex-1 flex-col gap-2 p-4">
+                    <p className="font-display text-sm font-medium text-[#22272b]">{p.title}</p>
+                    {p.tools?.length > 0 && (
+                      <div className="flex flex-wrap gap-1.5">{p.tools.map((t) => <Badge key={t} name={t} />)}</div>
+                    )}
+                  </div>
                 </button>
               ))}
             </div>
@@ -77,10 +81,7 @@ export default function AICreatives({ ads, posts }) {
       </div>
 
       {openPost !== null && posts?.[openPost] && (
-        <div
-          className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black/90 p-4 md:p-10"
-          onClick={() => setOpenPost(null)}
-        >
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black/90 p-4 md:p-10" onClick={() => setOpenPost(null)}>
           <button
             onClick={() => setOpenPost(null)}
             aria-label="Close post"
@@ -88,13 +89,8 @@ export default function AICreatives({ ads, posts }) {
           >
             <X size={18} />
           </button>
-          <img
-            src={posts[openPost].image}
-            alt={posts[openPost].title}
-            onClick={(e) => e.stopPropagation()}
-            className="max-h-full max-w-full rounded-lg object-contain"
-          />
-          <p className="mt-3 text-sm text-white/80">{posts[openPost].title}</p>
+          <img src={posts[openPost].image} alt={posts[openPost].title} onClick={(e) => e.stopPropagation()} className="max-h-full max-w-full rounded-lg object-contain" />
+          <p className="mt-3 font-display text-sm text-white/80">{posts[openPost].title}</p>
         </div>
       )}
     </section>

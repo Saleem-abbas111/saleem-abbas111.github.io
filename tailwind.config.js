@@ -11,6 +11,11 @@ export default {
         mist: "#f3f3f5",
         line: "#e9ebef",
         subtle: "#717182",
+        coral: "#E4573D",
+        sect: "#DDE1E4",
+        sect2: "#E9ECEE",
+        card: "#F7F8F9",
+        edge: "#C6CCD1",
       },
       fontFamily: {
         display: ["Poppins", "sans-serif"],

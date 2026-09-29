@@ -1,3 +1,5 @@
+import { BrandIcon, Badge } from "./brands.jsx";
+
 export default function Certifications({ certifications }) {
   return (
     <section id="certifications" className="border-b border-line bg-mist">
@@ -8,11 +10,11 @@ export default function Certifications({ certifications }) {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {certifications.map((c) => (
             <div key={c.name} className="rounded-2xl border border-line bg-paper p-6 text-center shadow-sm">
-              <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-accent/10 text-lg font-bold text-accent">
-                {(c.issuer || c.name).charAt(0).toUpperCase()}
+              <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full border border-line bg-white shadow-sm">
+                <BrandIcon name={c.issuer} size={28} />
               </div>
               <h3 className="text-sm font-semibold text-ink">{c.name}</h3>
-              {c.issuer && <p className="mt-1 text-xs text-subtle">{c.issuer}</p>}
+              {c.issuer && <div className="mt-2 flex justify-center"><Badge name={c.issuer} /></div>}
               {c.issuedDate && (
                 <span className="mt-3 inline-block rounded-full bg-mist px-3 py-1 text-xs text-subtle">
                   {c.issuedDate}

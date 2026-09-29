@@ -1,3 +1,4 @@
+import { BrandIcon } from "./brands.jsx";
 import {
   Code2, Database, Table2, BarChart3, LayoutDashboard,
   Search, Sigma, PieChart, FlaskConical, Wrench,
@@ -19,7 +20,7 @@ const SOFT_ICONS = {
   "analytical thinking": Brain,
 };
 
-function SkillCard({ title, icon: TitleIcon, items, iconMap }) {
+function SkillCard({ title, icon: TitleIcon, items, iconMap, brand = false }) {
   return (
     <div className="rounded-2xl bg-mist p-6">
       <div className="mb-5 flex items-center gap-3">
@@ -34,7 +35,7 @@ function SkillCard({ title, icon: TitleIcon, items, iconMap }) {
               key={label}
               className="flex items-center gap-3 rounded-lg bg-paper px-4 py-3 text-sm font-medium text-ink shadow-sm"
             >
-              <Icon size={16} className="text-accent" />
+              {brand ? <BrandIcon name={label} size={18} /> : <Icon size={16} className="text-accent" />}
               {label}
             </div>
           );
@@ -55,7 +56,7 @@ export default function Skills({ skills }) {
         </p>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-          <SkillCard title="Technical Tools" icon={Database} items={skills.technical || []} iconMap={TECH_ICONS} />
+          <SkillCard title="Technical Tools" icon={Database} items={skills.technical || []} iconMap={TECH_ICONS} brand />
           <SkillCard title="Analytics Skills" icon={PieChart} items={skills.analytics || []} iconMap={ANALYTICS_ICONS} />
           <SkillCard title="Soft Skills" icon={Brain} items={skills.soft || []} iconMap={SOFT_ICONS} />
         </div>

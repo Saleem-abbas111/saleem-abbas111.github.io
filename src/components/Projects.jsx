@@ -1,59 +1,43 @@
 import { Github } from "lucide-react";
+import { Badge } from "./brands.jsx";
+import { Cta, SectionHead } from "./ui.jsx";
 
 export default function Projects({ projects, folderUrl }) {
   return (
-    <section id="projects" className="border-b border-line bg-mist">
+    <section id="projects" className="border-b border-edge bg-sect">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="font-display text-center text-3xl font-bold text-ink md:text-4xl">Featured Projects</h2>
-        <div className="mx-auto mt-4 h-1 w-16 rounded bg-accent" />
-        <p className="mt-6 text-center text-subtle">A selection of my recent data science and analytics work.</p>
+        <SectionHead
+          eyebrow="Selected work"
+          title="Featured Projects"
+          blurb="A selection of my recent data science and analytics work."
+          action={folderUrl && <Cta href={folderUrl}>See all projects on GitHub</Cta>}
+        />
 
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           {projects.map((p) => (
-            <div key={p.title} className="overflow-hidden rounded-2xl bg-ink shadow-lg">
-              {p.image && <img src={p.image} alt={p.title} className="h-64 w-full object-cover" />}
-              <div className="p-7">
-                <h3 className="font-display text-xl font-semibold text-white">{p.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-white/70">{p.description}</p>
+            <article key={p.title} className="flex h-full flex-col overflow-hidden rounded-2xl border border-edge bg-card shadow-sm">
+              {p.image && (
+                <div className="aspect-[16/10] w-full overflow-hidden border-b border-edge bg-white">
+                  <img src={p.image} alt={p.title} className="h-full w-full object-cover object-top" />
+                </div>
+              )}
+              <div className="flex flex-1 flex-col p-6">
+                <h3 className="font-display text-xl font-medium text-[#22272b]">{p.title}</h3>
+                <p className="mt-3 line-clamp-4 font-display text-sm leading-relaxed text-[#4b535a]">{p.description}</p>
                 {p.tags?.length > 0 && (
                   <div className="mt-4 flex flex-wrap gap-2">
-                    {p.tags.map((t) => (
-                      <span
-                        key={t}
-                        className="rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium text-accent"
-                      >
-                        {t}
-                      </span>
-                    ))}
+                    {p.tags.map((t) => <Badge key={t} name={t} />)}
                   </div>
                 )}
                 {p.githubUrl && (
-                  <a
-                    href={p.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-6 flex items-center justify-center gap-2 rounded-lg border border-white/20 py-3 text-sm font-medium text-white transition-colors hover:bg-white/10"
-                  >
-                    <Github size={16} /> View Project on GitHub
-                  </a>
+                  <div className="mt-auto border-t border-edge pt-5">
+                    <div className="mt-1"><Cta href={p.githubUrl} icon={Github}>View project on GitHub</Cta></div>
+                  </div>
                 )}
               </div>
-            </div>
+            </article>
           ))}
         </div>
-
-        {folderUrl && (
-          <p className="mt-10 text-center">
-            <a
-              href={folderUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-medium text-accent hover:underline"
-            >
-              See all projects on GitHub →
-            </a>
-          </p>
-        )}
       </div>
     </section>
   );
