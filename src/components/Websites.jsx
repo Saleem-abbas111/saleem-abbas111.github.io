@@ -1,5 +1,5 @@
+import { ExternalLink } from "lucide-react";
 import { Badge } from "./brands.jsx";
-import { Cta, SectionHead } from "./ui.jsx";
 
 const host = (u = "") => u.replace(/^https?:\/\//, "").replace(/\/$/, "");
 
@@ -7,11 +7,11 @@ export default function Websites({ websites }) {
   return (
     <section id="websites" className="border-b border-edge bg-sect">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <SectionHead
-          eyebrow="Web design & development"
-          title="Websites"
-          blurb="Websites designed and built end to end, from layout to launch."
-        />
+        <h2 className="font-display text-center text-3xl font-bold text-ink md:text-4xl">Websites</h2>
+        <div className="mx-auto mt-4 h-1 w-16 rounded bg-accent" />
+        <p className="mx-auto mt-6 max-w-2xl text-center text-subtle">
+          Websites designed and built end-to-end, from layout to launch.
+        </p>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           {websites.map((w) => (
@@ -21,7 +21,7 @@ export default function Websites({ websites }) {
                 <span className="h-2.5 w-2.5 rounded-full bg-[#F2B84B]" />
                 <span className="h-2.5 w-2.5 rounded-full bg-[#5BB974]" />
                 {w.liveUrl && (
-                  <span className="ml-3 truncate rounded-full bg-white px-3 py-0.5 font-display text-xs text-[#5b6470]">
+                  <span className="ml-3 truncate rounded-full bg-white px-3 py-0.5 text-xs text-subtle">
                     {host(w.liveUrl)}
                   </span>
                 )}
@@ -31,18 +31,23 @@ export default function Websites({ websites }) {
                   <img src={w.image} alt={w.title} className="h-full w-full object-cover object-top" />
                 </div>
               )}
-              <div className="flex flex-1 flex-col p-6">
-                <h3 className="font-display text-xl font-medium text-[#22272b]">{w.title}</h3>
-                <p className="mt-3 line-clamp-3 font-display text-sm leading-relaxed text-[#4b535a]">{w.description}</p>
+              <div className="flex flex-1 flex-col p-7">
+                <h3 className="font-display text-xl font-semibold text-ink">{w.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-subtle">{w.description}</p>
                 {w.tools?.length > 0 && (
                   <div className="mt-4 flex flex-wrap gap-2">
                     {w.tools.map((t) => <Badge key={t} name={t} />)}
                   </div>
                 )}
                 {w.liveUrl && (
-                  <div className="mt-auto border-t border-edge pt-5">
-                    <div className="mt-1"><Cta href={w.liveUrl}>Visit website</Cta></div>
-                  </div>
+                  <a
+                    href={w.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 flex items-center justify-center gap-2 rounded-lg bg-accent py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
+                  >
+                    <ExternalLink size={16} /> Visit Website
+                  </a>
                 )}
               </div>
             </article>
