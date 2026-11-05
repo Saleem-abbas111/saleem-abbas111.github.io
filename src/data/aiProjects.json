@@ -2,7 +2,7 @@
   "items": [
     {
       "title": "Restaurant Intelligence — AI Data Analyst",
-      "category": "AI-Powered Business Intelligence / Data Analytics",
+      "category": "AI-Powered Business Intelligence",
       "featured": true,
       "description": "An end-to-end restaurant analytics platform combining data engineering, business intelligence, and conversational AI. It enables businesses to monitor restaurant performance, analyze sales and inventory, understand customer feedback, and ask business questions through an AI-powered data analyst.",
       "technologies": [
@@ -16,8 +16,24 @@
       ],
       "liveDemo": "https://restaurant-analytics-dbt-jzri.vercel.app/",
       "github": "https://github.com/Saleem-abbas111/restaurant-analytics-dbt",
-      "cover": "",
-      "images": [],
+      "cover": "/assets/uploads/analyst_01.png",
+      "images": [
+        {
+          "src": "/assets/uploads/analyst_02.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "src": "/assets/uploads/overview_01.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
+          "src": "/assets/uploads/overview_02.png",
+          "caption": "",
+          "alt": ""
+        }
+      ],
       "videos": []
     }
   ]
