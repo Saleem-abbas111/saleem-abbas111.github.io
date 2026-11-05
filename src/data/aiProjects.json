@@ -19,6 +19,11 @@
       "cover": "/assets/uploads/analyst_01.png",
       "images": [
         {
+          "src": "/assets/uploads/analyst_01.png",
+          "caption": "",
+          "alt": ""
+        },
+        {
           "src": "/assets/uploads/analyst_02.png",
           "caption": "",
           "alt": ""
