@@ -1,0 +1,23 @@
+{
+  "technical": [
+    "Python",
+    "SQL",
+    "Excel",
+    "Power BI",
+    "Tableau",
+    "Snowflake"
+  ],
+  "analytics": [
+    "Data Cleaning",
+    "EDA & Statistical Analysis",
+    "Data Visualization",
+    "A/B Testing",
+    "AI/ML",
+    "AI Agents & Automation"
+  ],
+  "soft": [
+    "Problem Solving",
+    "Effective Communication",
+    "Analytical Thinking"
+  ]
+}
