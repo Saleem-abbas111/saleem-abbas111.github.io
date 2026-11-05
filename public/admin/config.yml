@@ -175,6 +175,51 @@ collections:
               - { label: "Image", name: image, widget: image }
               - { label: "Tools used (brand badges)", name: tools, widget: select, multiple: true, required: false, options: ["Canva","Figma","Google","Gemini","Cloudflare","React","Tailwind CSS","WordPress","HTML","Python","AI Video"] }
 
+  - name: aiProjects
+    label: "AI, Agents & Automation"
+    files:
+      - file: src/data/aiProjects.json
+        name: aiProjects
+        label: "AI, Agents & Automation projects"
+        fields:
+          - name: items
+            label: "Projects"
+            widget: list
+            summary: "{{title}}"
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Category", name: category, widget: string, required: false }
+              - { label: "Featured (large showcase layout)", name: featured, widget: boolean, default: false, required: false }
+              - { label: "Description", name: description, widget: text }
+              - label: "Technologies"
+                name: technologies
+                widget: list
+                required: false
+                hint: "One per entry, e.g. Snowflake, dbt, FastAPI. Known names get a logo badge."
+                field: { label: "Technology", name: tech, widget: string }
+              - { label: "Live Demo URL", name: liveDemo, widget: string, required: false }
+              - { label: "GitHub URL", name: github, widget: string, required: false }
+              - { label: "Cover image (optional, defaults to first screenshot)", name: cover, widget: image, required: false }
+              - label: "Screenshots / images"
+                name: images
+                widget: list
+                required: false
+                summary: "{{caption}}"
+                fields:
+                  - { label: "Image", name: src, widget: image }
+                  - { label: "Caption", name: caption, widget: string, required: false }
+                  - { label: "Alt text (describes the image)", name: alt, widget: string, required: false }
+              - label: "Videos"
+                name: videos
+                widget: list
+                required: false
+                summary: "{{title}}"
+                hint: "Upload an MP4 (keep under ~25 MB) or choose Enter URL and paste a YouTube / Vimeo / MP4 link."
+                fields:
+                  - { label: "Title", name: title, widget: string }
+                  - { label: "Video file or link", name: url, widget: file }
+                  - { label: "Thumbnail image (optional)", name: poster, widget: image, required: false }
+
   - name: certifications
     label: "Certifications"
     files:
